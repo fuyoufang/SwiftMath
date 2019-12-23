@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02420A348CCBAC4042EC4C99 /* Pods_SwiftMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F00E4F1E9E542E01F4D1C8 /* Pods_SwiftMath.framework */; };
+		2F3E90DE6FB6240858394C29 /* Pods_SwiftMath_SwiftMathUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6BC461BFFBAE49576E4F62 /* Pods_SwiftMath_SwiftMathUITests.framework */; };
+		AE41EF7F55DAC2705F5ECD73 /* Pods_SwiftMathTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BAAD1F98EC0BD3E37F4439 /* Pods_SwiftMathTests.framework */; };
 		C5DF355023B0A07F0004D751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DF354F23B0A07F0004D751 /* AppDelegate.swift */; };
 		C5DF355223B0A07F0004D751 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DF355123B0A07F0004D751 /* SceneDelegate.swift */; };
 		C5DF355423B0A07F0004D751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DF355323B0A07F0004D751 /* ViewController.swift */; };
@@ -15,6 +18,12 @@
 		C5DF355C23B0A0810004D751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5DF355A23B0A0810004D751 /* LaunchScreen.storyboard */; };
 		C5DF356723B0A0810004D751 /* SwiftMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DF356623B0A0810004D751 /* SwiftMathTests.swift */; };
 		C5DF357223B0A0810004D751 /* SwiftMathUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DF357123B0A0810004D751 /* SwiftMathUITests.swift */; };
+		C5DF358223B0A1C00004D751 /* WebViewModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DF358123B0A1C00004D751 /* WebViewModeController.swift */; };
+		C5DF358423B0A1FA0004D751 /* iosMathModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DF358323B0A1FA0004D751 /* iosMathModeController.swift */; };
+		C5DF358723B0A2540004D751 /* iosMathModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DF358623B0A2540004D751 /* iosMathModeCell.swift */; };
+		C5DF358923B0A2C60004D751 /* WebViewModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DF358823B0A2C60004D751 /* WebViewModeCell.swift */; };
+		C5DF358B23B0A6060004D751 /* MathText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DF358A23B0A6060004D751 /* MathText.swift */; };
+		C5DF358E23B0AB8F0004D751 /* katex in Resources */ = {isa = PBXBuildFile; fileRef = C5DF358D23B0AB8F0004D751 /* katex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		125A0A3D2C32AC9D08296582 /* Pods-SwiftMath.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMath.debug.xcconfig"; path = "Target Support Files/Pods-SwiftMath/Pods-SwiftMath.debug.xcconfig"; sourceTree = "<group>"; };
+		15D34D78A4502E5108EB90EE /* Pods-SwiftMathTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMathTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftMathTests/Pods-SwiftMathTests.debug.xcconfig"; sourceTree = "<group>"; };
+		20BAAD1F98EC0BD3E37F4439 /* Pods_SwiftMathTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftMathTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F00E4F1E9E542E01F4D1C8 /* Pods_SwiftMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftMath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F6BC461BFFBAE49576E4F62 /* Pods_SwiftMath_SwiftMathUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftMath_SwiftMathUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A837BFE08BEE1F9A48532508 /* Pods-SwiftMath-SwiftMathUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMath-SwiftMathUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftMath-SwiftMathUITests/Pods-SwiftMath-SwiftMathUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B7A13CA7007C48879B2DD38C /* Pods-SwiftMath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMath.release.xcconfig"; path = "Target Support Files/Pods-SwiftMath/Pods-SwiftMath.release.xcconfig"; sourceTree = "<group>"; };
+		C18664232ED7333B693027C4 /* Pods-SwiftMath-SwiftMathUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMath-SwiftMathUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftMath-SwiftMathUITests/Pods-SwiftMath-SwiftMathUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C5DF354C23B0A07F0004D751 /* SwiftMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DF354F23B0A07F0004D751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5DF355123B0A07F0004D751 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +66,13 @@
 		C5DF356D23B0A0810004D751 /* SwiftMathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DF357123B0A0810004D751 /* SwiftMathUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMathUITests.swift; sourceTree = "<group>"; };
 		C5DF357323B0A0810004D751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5DF358123B0A1C00004D751 /* WebViewModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModeController.swift; sourceTree = "<group>"; };
+		C5DF358323B0A1FA0004D751 /* iosMathModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosMathModeController.swift; sourceTree = "<group>"; };
+		C5DF358623B0A2540004D751 /* iosMathModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosMathModeCell.swift; sourceTree = "<group>"; };
+		C5DF358823B0A2C60004D751 /* WebViewModeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModeCell.swift; sourceTree = "<group>"; };
+		C5DF358A23B0A6060004D751 /* MathText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathText.swift; sourceTree = "<group>"; };
+		C5DF358D23B0AB8F0004D751 /* katex */ = {isa = PBXFileReference; lastKnownFileType = folder; path = katex; sourceTree = "<group>"; };
+		F47127282447D60A7C68F457 /* Pods-SwiftMathTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMathTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftMathTests/Pods-SwiftMathTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02420A348CCBAC4042EC4C99 /* Pods_SwiftMath.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE41EF7F55DAC2705F5ECD73 /* Pods_SwiftMathTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +96,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F3E90DE6FB6240858394C29 /* Pods_SwiftMath_SwiftMathUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32F84C764466842D41A6052A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				125A0A3D2C32AC9D08296582 /* Pods-SwiftMath.debug.xcconfig */,
+				B7A13CA7007C48879B2DD38C /* Pods-SwiftMath.release.xcconfig */,
+				C18664232ED7333B693027C4 /* Pods-SwiftMath-SwiftMathUITests.debug.xcconfig */,
+				A837BFE08BEE1F9A48532508 /* Pods-SwiftMath-SwiftMathUITests.release.xcconfig */,
+				15D34D78A4502E5108EB90EE /* Pods-SwiftMathTests.debug.xcconfig */,
+				F47127282447D60A7C68F457 /* Pods-SwiftMathTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A096A1BFE2BF267C5C48066 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48F00E4F1E9E542E01F4D1C8 /* Pods_SwiftMath.framework */,
+				7F6BC461BFFBAE49576E4F62 /* Pods_SwiftMath_SwiftMathUITests.framework */,
+				20BAAD1F98EC0BD3E37F4439 /* Pods_SwiftMathTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C5DF354323B0A07F0004D751 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +133,8 @@
 				C5DF356523B0A0810004D751 /* SwiftMathTests */,
 				C5DF357023B0A0810004D751 /* SwiftMathUITests */,
 				C5DF354D23B0A07F0004D751 /* Products */,
+				32F84C764466842D41A6052A /* Pods */,
+				9A096A1BFE2BF267C5C48066 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +151,9 @@
 		C5DF354E23B0A07F0004D751 /* SwiftMath */ = {
 			isa = PBXGroup;
 			children = (
+				C5DF358C23B0A6230004D751 /* Common */,
+				C5DF358023B0A1530004D751 /* iosMath+YYLabel */,
+				C5DF357F23B0A14E0004D751 /* WebView */,
 				C5DF354F23B0A07F0004D751 /* AppDelegate.swift */,
 				C5DF355123B0A07F0004D751 /* SceneDelegate.swift */,
 				C5DF355323B0A07F0004D751 /* ViewController.swift */,
@@ -128,6 +183,33 @@
 			path = SwiftMathUITests;
 			sourceTree = "<group>";
 		};
+		C5DF357F23B0A14E0004D751 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				C5DF358D23B0AB8F0004D751 /* katex */,
+				C5DF358123B0A1C00004D751 /* WebViewModeController.swift */,
+				C5DF358823B0A2C60004D751 /* WebViewModeCell.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		C5DF358023B0A1530004D751 /* iosMath+YYLabel */ = {
+			isa = PBXGroup;
+			children = (
+				C5DF358323B0A1FA0004D751 /* iosMathModeController.swift */,
+				C5DF358623B0A2540004D751 /* iosMathModeCell.swift */,
+			);
+			path = "iosMath+YYLabel";
+			sourceTree = "<group>";
+		};
+		C5DF358C23B0A6230004D751 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C5DF358A23B0A6060004D751 /* MathText.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5DF357623B0A0810004D751 /* Build configuration list for PBXNativeTarget "SwiftMath" */;
 			buildPhases = (
+				FADBF0746B07BD6C04ECB2DA /* [CP] Check Pods Manifest.lock */,
 				C5DF354823B0A07F0004D751 /* Sources */,
 				C5DF354923B0A07F0004D751 /* Frameworks */,
 				C5DF354A23B0A07F0004D751 /* Resources */,
+				0029AD9DCD46E517A267714F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +236,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5DF357923B0A0810004D751 /* Build configuration list for PBXNativeTarget "SwiftMathTests" */;
 			buildPhases = (
+				DF4706B7BD7DEE3AE5BA374E /* [CP] Check Pods Manifest.lock */,
 				C5DF355E23B0A0810004D751 /* Sources */,
 				C5DF355F23B0A0810004D751 /* Frameworks */,
 				C5DF356023B0A0810004D751 /* Resources */,
@@ -170,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5DF357C23B0A0810004D751 /* Build configuration list for PBXNativeTarget "SwiftMathUITests" */;
 			buildPhases = (
+				7EC8B7A22C54DC6EE2697B3D /* [CP] Check Pods Manifest.lock */,
 				C5DF356923B0A0810004D751 /* Sources */,
 				C5DF356A23B0A0810004D751 /* Frameworks */,
 				C5DF356B23B0A0810004D751 /* Resources */,
+				7F34BDAA3BDF683AA433136C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +321,7 @@
 			files = (
 				C5DF355C23B0A0810004D751 /* LaunchScreen.storyboard in Resources */,
 				C5DF355923B0A0810004D751 /* Assets.xcassets in Resources */,
+				C5DF358E23B0AB8F0004D751 /* katex in Resources */,
 				C5DF355723B0A07F0004D751 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +342,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0029AD9DCD46E517A267714F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftMath/Pods-SwiftMath-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftMath/Pods-SwiftMath-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftMath/Pods-SwiftMath-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EC8B7A22C54DC6EE2697B3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftMath-SwiftMathUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F34BDAA3BDF683AA433136C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftMath-SwiftMathUITests/Pods-SwiftMath-SwiftMathUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftMath-SwiftMathUITests/Pods-SwiftMath-SwiftMathUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftMath-SwiftMathUITests/Pods-SwiftMath-SwiftMathUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF4706B7BD7DEE3AE5BA374E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftMathTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FADBF0746B07BD6C04ECB2DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftMath-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C5DF354823B0A07F0004D751 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5DF358223B0A1C00004D751 /* WebViewModeController.swift in Sources */,
+				C5DF358423B0A1FA0004D751 /* iosMathModeController.swift in Sources */,
 				C5DF355423B0A07F0004D751 /* ViewController.swift in Sources */,
 				C5DF355023B0A07F0004D751 /* AppDelegate.swift in Sources */,
+				C5DF358723B0A2540004D751 /* iosMathModeCell.swift in Sources */,
+				C5DF358923B0A2C60004D751 /* WebViewModeCell.swift in Sources */,
 				C5DF355223B0A07F0004D751 /* SceneDelegate.swift in Sources */,
+				C5DF358B23B0A6060004D751 /* MathText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +628,7 @@
 		};
 		C5DF357723B0A0810004D751 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 125A0A3D2C32AC9D08296582 /* Pods-SwiftMath.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +646,7 @@
 		};
 		C5DF357823B0A0810004D751 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7A13CA7007C48879B2DD38C /* Pods-SwiftMath.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +664,7 @@
 		};
 		C5DF357A23B0A0810004D751 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D34D78A4502E5108EB90EE /* Pods-SwiftMathTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +686,7 @@
 		};
 		C5DF357B23B0A0810004D751 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F47127282447D60A7C68F457 /* Pods-SwiftMathTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +708,7 @@
 		};
 		C5DF357D23B0A0810004D751 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C18664232ED7333B693027C4 /* Pods-SwiftMath-SwiftMathUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +728,7 @@
 		};
 		C5DF357E23B0A0810004D751 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A837BFE08BEE1F9A48532508 /* Pods-SwiftMath-SwiftMathUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
