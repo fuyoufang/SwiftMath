@@ -44,11 +44,6 @@ class iosMathModeCell: UITableViewCell {
                 }
                 mathTextLabel.attributedText = text
             }
-            let size = mathTextLabel.sizeThatFits(CGSize(width: CGFloat(screenWidth - mathTextContentLeft - mathTextContentRight) , height: CGFloat.greatestFiniteMagnitude))
-            mathTextLabel.snp.updateConstraints { (maker) in
-                maker.size.equalTo(size)
-            }
-            contentScrollView.contentSize = CGSize(width: size.width, height: 0)
         }
     }
     
@@ -61,6 +56,8 @@ class iosMathModeCell: UITableViewCell {
     private lazy var mathTextLabel: YYLabel = {
         var label = YYLabel()
         label.numberOfLines = 0
+        // 多行时，需要设置此属性才可以自动换行
+        label.preferredMaxLayoutWidth = CGFloat(screenWidth - mathTextContentLeft - mathTextContentRight)
         label.textColor = mathTextContentColor
         label.font = mathTextContentFont
         return label
@@ -88,16 +85,18 @@ class iosMathModeCell: UITableViewCell {
     }
     
     private func setupSubViews() {
+        // 在 mathTextLabel 外层需要包一层 scrollView：
+        // 因为当数学公式过长，一行显示不全的时候，lable 无法滚动显示，
+        // 所以将 label 放入 scrollView 中，使其可以滚动显示
         contentView.addSubview(contentScrollView)
         contentScrollView.addSubview(mathTextLabel)
-        
+
         contentScrollView.snp.makeConstraints { (maker) in
             maker.edges.equalTo(UIEdgeInsets(top: 10, left: CGFloat(mathTextContentLeft), bottom: 10, right: CGFloat(mathTextContentRight)))
         }
         
         mathTextLabel.snp.makeConstraints { (maker) in
             maker.left.right.top.bottom.height.equalToSuperview()
-            maker.size.equalTo(CGSize.zero)
         }
     }
 }
@@ -108,12 +107,12 @@ class iosMathModeCell: UITableViewCell {
 ///   - regex: 匹配规则
 ///   - validateString: 匹配对test象
 /// - Returns: 返回结果
-func RegularExpression (regex:String,validateString:String) -> [String] {
+func RegularExpression(regex: String, validateString: String) -> [String] {
     do {
         let regex: NSRegularExpression = try NSRegularExpression(pattern: regex, options: [])
         let matches = regex.matches(in: validateString, options: [], range: NSMakeRange(0, validateString.count))
         
-        var data:[String] = Array()
+        var data = [String]()
         for item in matches {
             let string = (validateString as NSString).substring(with: item.range)
             data.append(string)

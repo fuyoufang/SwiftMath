@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import YYText
 
 class iosMathModeController: UITableViewController {
     
@@ -15,7 +16,11 @@ class iosMathModeController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(iosMathModeCell.self, forCellReuseIdentifier: iosMathModeController.cellReuseIdentifier)
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -23,12 +28,12 @@ class iosMathModeController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mathTexts.count
+        return MathTexts.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: iosMathModeController.cellReuseIdentifier) as! iosMathModeCell
-        cell.mathText = mathTexts[indexPath.row]
+        cell.mathText = MathTexts[indexPath.row]
         return cell
     }
 }

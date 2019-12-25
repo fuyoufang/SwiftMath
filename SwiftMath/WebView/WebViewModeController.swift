@@ -36,24 +36,16 @@ extension WebViewModeController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mathTexts.count
+        return MathTexts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: WebViewModeController.cellReuseIdentifier) as! WebViewModeCell
-        cell.mathText = mathTexts[indexPath.row]
+        cell.mathText = MathTexts[indexPath.row]
         cell.questionContentLoadFinish = { [weak self] in
             self?.tableView.beginUpdates()
             self?.tableView.endUpdates()
         }
         return cell
     }
-    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        
-//        guard let cell = tableView.cellForRow(at: indexPath) as? WebViewModeCell else {
-//            return 40
-//        }
-//        return cell.cellHeight
-//    }
 }
