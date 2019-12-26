@@ -18,11 +18,6 @@ class iosMathModeController: UITableViewController {
         tableView.register(iosMathModeCell.self, forCellReuseIdentifier: iosMathModeController.cellReuseIdentifier)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
-    }
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

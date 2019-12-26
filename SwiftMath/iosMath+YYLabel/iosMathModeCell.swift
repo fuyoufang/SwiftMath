@@ -13,31 +13,23 @@ import SnapKit
 
 class iosMathModeCell: UITableViewCell {
     
+    private static let regex = "\(DEFAULT_DELIMITER).*?\(DEFAULT_DELIMITER)"
     var mathText: String? {
         didSet {
-            let text: NSMutableAttributedString
             
             if mathText == nil {
                 mathTextLabel.attributedText = nil
             } else {
-                let regex = "\(DEFAULT_DELIMITER).*?\(DEFAULT_DELIMITER)"
-                let result = RegularExpression(regex: regex, validateString: mathText!)
+                let result = RegularExpression(regex: iosMathModeCell.regex, validateString: mathText!)
                 
-                text = NSMutableAttributedString()
+                let text = NSMutableAttributedString()
                 text.append(NSAttributedString(string: mathText!, attributes: [NSAttributedString.Key.font : mathTextContentFont]))
                 if result.count > 0 {
                     for item in result {
                         let range: NSRange = (text.string as NSString).range(of: item)
                         if range.location != NSNotFound {
-                            let label = MTMathUILabel()
-                            label.labelMode = .text
-                            label.textAlignment = .left
-                            label.fontSize = CGFloat(mathTextContentFontSize)
-                            label.textColor = mathTextContentColor
-                            label.latex = item.replacingOccurrences(of: DEFAULT_DELIMITER, with: "")
-                            label.sizeToFit()
-                            let size = CGSize(width: label.frame.size.width + 10, height: label.frame.size.height)
-                            let attachment = NSMutableAttributedString.yy_attachmentString(withContent: label, contentMode: .center, attachmentSize: size, alignTo: mathTextContentFont, alignment: .center)
+                            let label = createMathUILabel(latex: item.replacingOccurrences(of: DEFAULT_DELIMITER, with: ""))
+                            let attachment = NSMutableAttributedString.yy_attachmentString(withContent: label, contentMode: .center, attachmentSize: label.frame.size, alignTo: mathTextContentFont, alignment: .center)
                             text.replaceCharacters(in: range, with: attachment)
                         }
                     }
@@ -45,6 +37,17 @@ class iosMathModeCell: UITableViewCell {
                 mathTextLabel.attributedText = text
             }
         }
+    }
+    
+    private func createMathUILabel(latex: String) -> MTMathUILabel {
+        let label = MTMathUILabel()
+        label.labelMode = .text
+        label.textAlignment = .left
+        label.fontSize = CGFloat(mathTextContentFontSize)
+        label.textColor = mathTextContentColor
+        label.latex = latex
+        label.sizeToFit()
+        return label
     }
     
     

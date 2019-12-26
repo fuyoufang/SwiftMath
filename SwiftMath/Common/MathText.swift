@@ -8,6 +8,7 @@
 
 import UIKit
 
+// 数学公式的分割符号
 let DEFAULT_DELIMITER = "`"
 
 let MathText0 =
