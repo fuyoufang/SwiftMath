@@ -2,9 +2,9 @@
 
 在开发的工程中，有需要显示数学公式的需求，例如下面的
 
-![](https://user-gold-cdn.xitu.io/2019/12/25/16f3c1de14b4c85d?w=279&h=102&f=png&s=4771)
+![数学公式1](https://user-gold-cdn.xitu.io/2019/12/25/16f3c1de14b4c85d?w=279&h=102&f=png&s=4771)
 
-![](https://user-gold-cdn.xitu.io/2019/12/25/16f3c1e0d0877c4a?w=321&h=139&f=png&s=7245)
+![数学公式2](https://user-gold-cdn.xitu.io/2019/12/25/16f3c1e0d0877c4a?w=321&h=139&f=png&s=7245)
 
 实现上面的显示方式，可以使用三种方式：
 ### 使用图片
@@ -29,7 +29,7 @@
 
 另外还需要考虑在数学公式过长，一个页面显示不全时，需要左右滚动方便用户查看数学公式。所以用于展示信息的 YYLabel 还需要放在一个 UIScrollView 中。
 
-具体的实现方式可以查看 [github](https://github.com/FuYouFang/SwiftMath)。
+具体的实现方式可以查看本项目。
 
 | 项目截图1 | 项目截图2 | 
 | :--: | :--: |
